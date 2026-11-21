@@ -1,0 +1,40 @@
+LOOK OUTSIDE - TRADUÇÃO PT-BR V1 (instalação manual)
+====================================================
+
+Compatível com Look Outside até o patch 2.30 (build 12).
+
+Este .zip tem a mesma estrutura de pastas do jogo. Basta extrair
+por cima da pasta do jogo e aceitar substituir.
+
+Feche o jogo antes de começar.
+
+1) Abra a pasta do jogo.
+   Steam: clique com o botão direito em Look Outside > Gerenciar >
+   Navegar pelos arquivos locais.
+   (Caminho padrão: C:\Program Files (x86)\Steam\steamapps\common\Look Outside)
+
+2) Faça uma cópia de segurança do arquivo  js\plugins.js  do jogo.
+
+3) Extraia o .zip dentro dessa pasta (ou arraste a pasta "js" para lá)
+   e aceite substituir os arquivos. Isso coloca:
+     js\plugins\PTBR_Traducao.js   (a tradução)
+     js\plugins.js                 (lista de plugins com a tradução ativada)
+
+Pronto. Abra o jogo normalmente.
+
+SE O JOGO RECEBEU ATUALIZAÇÃO
+-----------------------------
+O plugins.js daqui foi feito para o patch 2.30 (build 12). Se o jogo
+for atualizado, em vez de substituir o plugins.js, copie só o
+PTBR_Traducao.js para js\plugins\ e edite o js\plugins.js do jogo:
+antes do último  ]  do arquivo, acrescente uma vírgula e esta linha:
+
+{"name":"PTBR_Traducao","status":true,"description":"[PT-BR] Traducao de Look Outside","parameters":{}}
+
+(Ou use o instalador, que faz isso sozinho em qualquer versão.)
+
+PARA REMOVER
+------------
+Apague js\plugins\PTBR_Traducao.js e volte o plugins.js da sua cópia
+de segurança (ou, na Steam: Propriedades > Arquivos instalados >
+Verificar integridade dos arquivos).

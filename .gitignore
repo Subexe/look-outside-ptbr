@@ -1,0 +1,4 @@
+instalador/output/
+*.exe
+*.zip
+*.tmp
